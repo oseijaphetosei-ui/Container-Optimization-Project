@@ -25,7 +25,7 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - [ ] 3D visualizations (rotate and zoom)
 - [ ] Optimization landscape plots
 - [ ] Shape comparison analysis
-- [ ] Cost calculator
+
 
 ## 📚 Calculus Concepts
 
