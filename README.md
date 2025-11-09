@@ -45,31 +45,7 @@ This project demonstrates:
 - **Plotly** - Interactive 3D graphics
 - **Streamlit** - Web interface
 
-## 📦 Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/oseijaphetosei-ui/container-optimization.git
-cd container-optimization
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## 🎮 Usage
-
-```bash
-# Run the interactive web app
-streamlit run app.py
-```
-
-Your browser will open automatically at `http://localhost:8501`
-
-### Command Line (future feature)
-```bash
-# Optimize a cylinder with volume 1000
-python -m src.optimization --shape cylinder --volume 1000
-```
 
 ## 📐 Mathematical Background
 
