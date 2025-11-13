@@ -180,7 +180,7 @@ pytest --cov=src tests/
 
 ## 📸 Screenshots
 
-_Coming soon! Add screenshots of your web interface here._
+_Coming soon! 
 
 ## 🎓 Educational Value
 
