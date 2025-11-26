@@ -161,7 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **OSEI JAPHET ACQUAH** - Initial work and mathematical derivations
+- **OSEI JAPHET ACQUAH** 
 
 
 ## 📬 Contact
@@ -169,13 +169,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: oseijaphetosei-ui(https://github.com/oseijaphetosei-ui)
 - Email:jotk2024@mymail.pomona.edu
 
-## ⭐ Show Your Support
+## Show Your Support
 
 Give a ⭐️ if this project helped you learn about optimization!
 
 ---
-
-### Quick Links
 - [Issues](../../issues) - Report bugs or suggest features
-- [Projects](../../projects) - Track development progress
-- [Wiki](../../wiki) - Additional documentation
+
