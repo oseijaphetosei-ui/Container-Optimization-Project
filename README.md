@@ -5,7 +5,7 @@ Container Design Optimization
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project uses **multivariable calculus** to solve real-world optimization problems: finding container dimensions that minimize surface area for a given volume. 
 
@@ -21,7 +21,7 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - [ ] Optimize rectangular boxes (open top)
 - [ ] Optimize cylinders (closed and open)
 - [ ] Interactive web interface with Streamlit
-- [ ] 3D visualizations (rotate and zoom)
+- [ ] 3D visualizations
 - [ ] Shape comparison analysis
 
 
@@ -36,14 +36,14 @@ This project demonstrates:
 
 ## 🛠️ Tech Stack
 
-- **Python 3.8+** - 
+- **Python 
 - **NumPy and SciPy** - Numerical computations and optimizations
 - **Matplotlib** - 2D plotting
 - **Plotly** - Interactive 3D graphics
 - **Streamlit** - Web interface
 
 
-## 📐 Mathematical Background
+##  Mathematical Background
 
 ### Problem: Minimize Surface Area
 
@@ -108,7 +108,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 - [ ] Document all mathematical proofs
 - [ ] Create test cases
 
-### Phase 2: Implementation 💻
+### Phase 2: Implementation 
 - [ ] Implement cylinder optimization
 - [ ] Implement rectangular box optimization
 - [ ] Add numerical verification
@@ -120,7 +120,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 - [ ] Optimization landscape plots
 - [ ] Shape comparison charts
 
-### Phase 4: Web Interface 🌐
+### Phase 4: Web Interface 
 - [ ] Set up Streamlit app
 - [ ] Add interactive sliders
 - [ ] Display results and visualizations
