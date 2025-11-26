@@ -136,11 +136,6 @@ elif page == "🔵 Cylinder Optimizer":
             st.metric("Optimal Height", f"{h_numerical:.4f}")
             st.metric("Minimum Surface Area", f"{sa_numerical:.4f}")
             st.metric("Height/Radius Ratio", f"{h_numerical/r_numerical:.4f}")
-        
-        # Verification
-        st.success(f"✓ Volume constraint satisfied: {optimizer.verify_volume(r_analytical, h_analytical)}")
-        error = abs(sa_analytical - sa_numerical) / sa_analytical * 100
-        st.info(f"Analytical vs Numerical error: {error:.6f}%")
     
     with tab2:
         st.markdown("#### Interactive 3D Model")
@@ -207,11 +202,6 @@ elif page == "📦 Box Optimizer":
             st.metric("Optimal Width", f"{w_numerical:.4f}")
             st.metric("Optimal Height", f"{h_numerical:.4f}")
             st.metric("Minimum Surface Area", f"{sa_numerical:.4f}")
-        
-        # Verification
-        st.success(f"✓ Volume constraint satisfied: {optimizer.verify_volume(l_analytical, w_analytical, h_analytical)}")
-        error = abs(sa_analytical - sa_numerical) / sa_analytical * 100
-        st.info(f"Analytical vs Numerical error: {error:.6f}%")
     
     with tab2:
         st.markdown("#### Interactive 3D Model")
