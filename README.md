@@ -103,10 +103,10 @@ Contributions are welcome! This is a learning project, so feel free to:
 
 ## 📋 Development Roadmap
 
-### Phase 1: Core Math ✏️
+### Phase 1:Research calculus concepts ✏️
 - [ ] Derive formulas using Lagrange multipliers
 - [ ] Document all mathematical proofs
-- [ ] Create test cases
+
 
 ### Phase 2: Implementation 
 - [ ] Implement cylinder optimization
@@ -115,10 +115,8 @@ Contributions are welcome! This is a learning project, so feel free to:
 - [ ] Write unit tests
 
 ### Phase 3: Visualization 📊
-- [ ] Basic 2D plots (matplotlib)
-- [ ] 3D container models (Plotly)
-- [ ] Optimization landscape plots
-- [ ] Shape comparison charts
+- [ ] Basic 2D plots for comparisons between containers(matplotlib)
+- [ ] 3D container displays (Plotly)
 
 ### Phase 4: Web Interface 
 - [ ] Set up Streamlit app
