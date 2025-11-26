@@ -14,8 +14,7 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 ### Mathematical Approach
 - **Lagrange Multipliers** for constrained optimization
 - **Partial Derivatives** to find critical points
-- **Analytical Solutions** verified with numerical methods
-- **Interactive Visualizations** to explore results
+
 
 ## 🚀 Features
 
@@ -23,9 +22,8 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - [ ] Optimize cylinders (closed and open)
 - [ ] Interactive web interface with Streamlit
 - [ ] 3D visualizations (rotate and zoom)
-- [ ] Optimization landscape plots
 - [ ] Shape comparison analysis
-- [ ] Cost calculator
+
 
 ## 📚 Calculus Concepts
 
@@ -38,38 +36,12 @@ This project demonstrates:
 
 ## 🛠️ Tech Stack
 
-- **Python 3.8+** - Core language
-- **NumPy** - Numerical computations
-- **SciPy** - Numerical optimization
+- **Python 3.8+** - 
+- **NumPy and SciPy** - Numerical computations and optimizations
 - **Matplotlib** - 2D plotting
 - **Plotly** - Interactive 3D graphics
 - **Streamlit** - Web interface
 
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/oseijaphetosei-ui/container-optimization.git
-cd container-optimization
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## 🎮 Usage
-
-```bash
-# Run the interactive web app
-streamlit run app.py
-```
-
-Your browser will open automatically at `http://localhost:8501`
-
-### Command Line (future feature)
-```bash
-# Optimize a cylinder with volume 1000
-python -m src.optimization --shape cylinder --volume 1000
-```
 
 ## 📐 Mathematical Background
 
@@ -98,26 +70,9 @@ Take partial derivatives and solve:
 
 [See full derivations in `/docs/derivations.md`]
 
-## 📂 Project Structure
 
-```
-container-optimization/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── app.py                    # Streamlit web app
-├── docs/
-│   ├── derivations.md        # Mathematical proofs
-│   └── examples.md           # Usage examples
-├── src/
-│   ├── __init__.py
-│   ├── optimization.py       # Core optimization functions
-│   └── visualization.py      # Plotting utilities
-└── tests/
-    └── test_optimization.py  # Unit tests
-```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! This is a learning project, so feel free to:
 
@@ -144,9 +99,7 @@ Contributions are welcome! This is a learning project, so feel free to:
    ```
 5. **Open a Pull Request**
 
-### Good First Issues
 
-Check out issues labeled `good-first-issue` for beginner-friendly tasks!
 
 ## 📋 Development Roadmap
 
@@ -173,21 +126,12 @@ Check out issues labeled `good-first-issue` for beginner-friendly tasks!
 - [ ] Display results and visualizations
 - [ ] Add mathematical derivation display
 
-### Phase 5: Advanced Features 🚀
+### Phase 5: Advanced Features(coming soon) 🚀
 - [ ] Add more shapes (cone, sphere)
 - [ ] Material cost optimization
 - [ ] Gradient descent animation
 - [ ] Export results feature
 
-## 🧪 Testing
-
-```bash
-# Run unit tests
-pytest tests/
-
-# Run with coverage
-pytest --cov=src tests/
-```
 
 ## 📖 Documentation
 
@@ -202,9 +146,6 @@ pytest --cov=src tests/
 - **Education** - Learn multivariable calculus concepts
 - **Sustainability** - Reduce material waste
 
-## 📸 Screenshots
-
-_Coming soon! Add screenshots of your web interface here._
 
 ## 🎓 Educational Value
 
@@ -222,11 +163,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **OSEI JAPHET ACQUAH** - Initial work and mathematical derivations
 
-## 🙏 Acknowledgments
-
-- Thanks to all contributors!
-- Inspired by real-world packaging optimization problems
-- Built as a final project for Calculus 3
 
 ## 📬 Contact
 
@@ -238,8 +174,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Give a ⭐️ if this project helped you learn about optimization!
 
 ---
-
-**Status:** 🚧 Work in Progress - Contributions Welcome!
 
 ### Quick Links
 - [Issues](../../issues) - Report bugs or suggest features
