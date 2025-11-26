@@ -58,7 +58,7 @@ if page == "🏠 Home":
     - ✅ **Rectangular Box Optimization** - Find optimal dimensions
     - ✅ **Shape Comparison** - Compare different container types
     - ✅ **Interactive 3D Visualizations** - Rotate and explore the results
-    - ✅ **Optimization Landscapes** - See how surface area varies
+    - ✅ **Mathematical Derivations** - Learn the theory behind the optimization
     
     ### Mathematical Approach
     
@@ -131,7 +131,7 @@ elif page == "🔵 Cylinder Optimizer":
     # Display results
     st.subheader("Optimization Results")
     
-    tab1, tab2, tab3 = st.tabs(["📊 Results", "🎨 3D Visualization", "📈 Optimization Landscape"])
+    tab1, tab2 = st.tabs(["📊 Results", "🎨 3D Visualization"])
     
     with tab1:
         col1, col2 = st.columns(2)
@@ -159,18 +159,6 @@ elif page == "🔵 Cylinder Optimizer":
         st.markdown("#### Interactive 3D Model")
         fig_3d = plot_cylinder_3d(r_analytical, h_analytical, closed=closed)
         st.plotly_chart(fig_3d, use_container_width=True)
-    
-    with tab3:
-        st.markdown("#### Surface Area vs Radius")
-        fig_landscape = plot_optimization_landscape_cylinder(
-            volume, closed=closed, optimal_r=r_analytical, optimal_h=h_analytical
-        )
-        st.plotly_chart(fig_landscape, use_container_width=True)
-        
-        st.markdown("""
-        The red star marks the optimal point where surface area is minimized.
-        Notice how the surface area increases as you move away from this point.
-        """)
 
 elif page == "📦 Box Optimizer":
     st.header("Rectangular Box Optimization")
@@ -214,7 +202,7 @@ elif page == "📦 Box Optimizer":
     # Display results
     st.subheader("Optimization Results")
     
-    tab1, tab2, tab3 = st.tabs(["📊 Results", "🎨 3D Visualization", "📈 Optimization Landscape"])
+    tab1, tab2 = st.tabs(["📊 Results", "🎨 3D Visualization"])
     
     with tab1:
         col1, col2 = st.columns(2)
@@ -242,18 +230,6 @@ elif page == "📦 Box Optimizer":
         st.markdown("#### Interactive 3D Model")
         fig_3d = plot_box_3d(l_analytical, w_analytical, h_analytical, open_top=open_top)
         st.plotly_chart(fig_3d, use_container_width=True)
-    
-    with tab3:
-        st.markdown("#### Surface Area vs Base Side Length")
-        fig_landscape = plot_optimization_landscape_box(
-            volume, open_top=open_top, optimal_l=l_analytical, optimal_h=h_analytical
-        )
-        st.plotly_chart(fig_landscape, use_container_width=True)
-        
-        st.markdown("""
-        The red star marks the optimal point. The curve shows how surface area
-        changes as the base dimensions vary while maintaining constant volume.
-        """)
 
 elif page == "📊 Shape Comparison":
     st.header("Container Shape Comparison")
