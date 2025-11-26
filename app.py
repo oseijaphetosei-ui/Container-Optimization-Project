@@ -75,20 +75,7 @@ if page == "🏠 Home":
     - 🏭 **Manufacturing** - Optimize production efficiency
     - ♻️ **Sustainability** - Reduce waste
     - 💰 **Cost Reduction** - Lower material expenses
-    
-    ### Get Started
-    
-    Choose an optimizer from the sidebar to begin exploring!
     """)
-    
-    # Quick stats
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Container Types", "4")
-    with col2:
-        st.metric("Calculus Concepts", "3+")
-    with col3:
-        st.metric("Interactive Plots", "6+")
 
 elif page == "🔵 Cylinder Optimizer":
     st.header("Cylinder Optimization")
