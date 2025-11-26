@@ -120,7 +120,6 @@ Contributions are welcome! This is a learning project, so feel free to:
 
 ### Phase 4: Web Interface 
 - [ ] Set up Streamlit app
-- [ ] Add interactive sliders
 - [ ] Display results and visualizations
 - [ ] Add mathematical derivation display
 
