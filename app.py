@@ -358,5 +358,8 @@ st.sidebar.markdown("""
     - Plotly
     - Streamlit
     
-    **Created by:** OSEI JAPHET ACQUAH
+    **Created by:**
+    - OSEI JAPHET ACQUAH
+    - SELINA FAN
+    - FREDERICA ABOAGYE
 """)
