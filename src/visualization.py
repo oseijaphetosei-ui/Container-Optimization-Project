@@ -79,13 +79,26 @@ def plot_cylinder_3d(radius: float, height: float, closed: bool = True,
             xaxis_title='X',
             yaxis_title='Y',
             zaxis_title='Z (Height)',
-            aspectmode='data'
+            aspectmode='data',
+            camera=dict(
+                eye=dict(x=1.5, y=1.5, z=1.5)
+            )
         ),
         width=700,
         height=700
     )
     
-    return fig
+    # Disable pan, turntable, orbital rotations, and download button
+    config = {
+        'modeBarButtonsToRemove': [
+            'zoom3d', 'pan3d', 'orbitRotation', 'tableRotation',
+            'resetCameraDefault3d', 'resetCameraLastSave3d',
+            'hoverClosest3d', 'toImage'
+        ],
+        'displayModeBar': True
+    }
+    
+    return fig, config
 
 
 def plot_box_3d(length: float, width: float, height: float, 
@@ -147,20 +160,35 @@ def plot_box_3d(length: float, width: float, height: float,
             showlegend=False
         ))
     
-    # Update layout
+    # Update layout with disabled interactions
     fig.update_layout(
         title=title,
         scene=dict(
             xaxis_title='Length',
             yaxis_title='Width',
             zaxis_title='Height',
-            aspectmode='data'
+            aspectmode='data',
+            camera=dict(
+                eye=dict(x=1.5, y=1.5, z=1.5)
+            ),
+            dragmode=False
         ),
         width=700,
         height=700
     )
     
-    return fig
+    # Hide mode bar and disable all interactions
+    config = {
+        'displayModeBar': False,
+        'staticPlot': True
+    }
+    
+    return fig, config
+      'displayModeBar': False,
+        'staticPlot': True
+    }
+    
+    return fig, config
 
 
 def plot_optimization_landscape_cylinder(volume: float, closed: bool = True,

@@ -139,8 +139,8 @@ elif page == "🔵 Cylinder Optimizer":
     
     with tab2:
         st.markdown("#### Interactive 3D Model")
-        fig_3d = plot_cylinder_3d(r_analytical, h_analytical, closed=closed)
-        st.plotly_chart(fig_3d, use_container_width=True)
+        fig_3d, config_3d = plot_cylinder_3d(r_analytical, h_analytical, closed=closed)
+        st.plotly_chart(fig_3d, use_container_width=True, config=config_3d)
 
 elif page == "📦 Box Optimizer":
     st.header("Rectangular Box Optimization")
@@ -205,8 +205,8 @@ elif page == "📦 Box Optimizer":
     
     with tab2:
         st.markdown("#### Interactive 3D Model")
-        fig_3d = plot_box_3d(l_analytical, w_analytical, h_analytical, open_top=open_top)
-        st.plotly_chart(fig_3d, use_container_width=True)
+        fig_3d, config_3d = plot_box_3d(l_analytical, w_analytical, h_analytical, open_top=open_top)
+        st.plotly_chart(fig_3d, use_container_width=True, config=config_3d)
 
 elif page == "📊 Shape Comparison":
     st.header("Container Shape Comparison")
