@@ -286,36 +286,51 @@ elif page == "📚 Math Background":
     
     To optimize f(x, y) subject to constraint g(x, y) = c:
     
-    1. Form the Lagrangian: L(x, y, λ) = f(x, y) - λ(g(x, y) - c)
-    2. Take partial derivatives: ∇L = 0
-    3. Solve the system of equations
+    Set the gradient of f equal to λ times the gradient of g:
+    """)
+    
+    st.latex(r"\nabla f = \lambda \nabla g")
+    
+    st.markdown("""
+    This gives us:
+    """)
+    
+    st.latex(r"\frac{\partial f}{\partial x} = \lambda \frac{\partial g}{\partial x}")
+    st.latex(r"\frac{\partial f}{\partial y} = \lambda \frac{\partial g}{\partial y}")
+    
+    st.markdown("""
+    Along with the constraint equation g(x, y) = c, we can solve for the optimal values.
     
     ### Example: Closed Cylinder
     
-    **Objective:** Minimize surface area S = 2πr² + 2πrh
+    **Objective:** Minimize surface area S(r, h) = 2πr² + 2πrh
     
-    **Constraint:** Volume V = πr²h = constant
+    **Constraint:** Volume g(r, h) = πr²h = V (constant)
     
-    **Lagrangian:**
+    **Step 1: Find the gradients**
     """)
     
-    st.latex(r"L(r, h, \lambda) = 2\pi r^2 + 2\pi rh - \lambda(\pi r^2 h - V)")
+    st.latex(r"\nabla S = \left( \frac{\partial S}{\partial r}, \frac{\partial S}{\partial h} \right) = (4\pi r + 2\pi h, 2\pi r)")
+    st.latex(r"\nabla g = \left( \frac{\partial g}{\partial r}, \frac{\partial g}{\partial h} \right) = (2\pi rh, \pi r^2)")
     
-    st.markdown("**Partial Derivatives:**")
+    st.markdown("**Step 2: Set ∇S = λ∇g**")
     
-    st.latex(r"\frac{\partial L}{\partial r} = 4\pi r + 2\pi h - 2\lambda\pi rh = 0")
-    st.latex(r"\frac{\partial L}{\partial h} = 2\pi r - \lambda\pi r^2 = 0")
-    st.latex(r"\frac{\partial L}{\partial \lambda} = \pi r^2 h - V = 0")
+    st.latex(r"4\pi r + 2\pi h = \lambda (2\pi rh) \quad \text{...(1)}")
+    st.latex(r"2\pi r = \lambda (\pi r^2) \quad \text{...(2)}")
     
     st.markdown("""
-    **Solution:**
+    **Step 3: Solve for λ and find the relationship**
     
-    From the second equation: λ = 2/r
-    
-    Substituting into the first equation and simplifying:
+    From equation (2):
     """)
     
-    st.latex(r"4\pi r + 2\pi h - 4\pi h = 0")
+    st.latex(r"2\pi r = \lambda \pi r^2")
+    st.latex(r"\lambda = \frac{2}{r}")
+    
+    st.markdown("Substitute λ into equation (1):")
+    
+    st.latex(r"4\pi r + 2\pi h = \frac{2}{r}(2\pi rh)")
+    st.latex(r"4\pi r + 2\pi h = 4\pi h")
     st.latex(r"4\pi r = 2\pi h")
     st.latex(r"h = 2r")
     
