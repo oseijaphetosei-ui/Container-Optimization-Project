@@ -72,7 +72,7 @@ def plot_cylinder_3d(radius: float, height: float, closed: bool = True,
             opacity=0.8
         ))
     
-    # Update layout
+    # Update layout with disabled interactions
     fig.update_layout(
         title=title,
         scene=dict(
@@ -82,20 +82,17 @@ def plot_cylinder_3d(radius: float, height: float, closed: bool = True,
             aspectmode='data',
             camera=dict(
                 eye=dict(x=1.5, y=1.5, z=1.5)
-            )
+            ),
+            dragmode=False
         ),
         width=700,
         height=700
     )
     
-    # Disable pan, turntable, orbital rotations, and download button
+    # Hide mode bar and disable all interactions
     config = {
-        'modeBarButtonsToRemove': [
-            'zoom3d', 'pan3d', 'orbitRotation', 'tableRotation',
-            'resetCameraDefault3d', 'resetCameraLastSave3d',
-            'hoverClosest3d', 'toImage'
-        ],
-        'displayModeBar': True
+        'displayModeBar': False,
+        'staticPlot': True
     }
     
     return fig, config
@@ -180,11 +177,6 @@ def plot_box_3d(length: float, width: float, height: float,
     # Hide mode bar and disable all interactions
     config = {
         'displayModeBar': False,
-        'staticPlot': True
-    }
-    
-    return fig, config
-      'displayModeBar': False,
         'staticPlot': True
     }
     
