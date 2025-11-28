@@ -359,7 +359,6 @@ st.sidebar.markdown("""
     - Streamlit
     
     **Created by:**
-    - OSEI JAPHET ACQUAH
-    - SELINA FAN
-    - FREDERICA ABOAGYE
+    - JAPHET ACQUAH, OSEI
+   
 """)
