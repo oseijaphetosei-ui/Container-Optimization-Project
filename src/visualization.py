@@ -72,7 +72,7 @@ def plot_cylinder_3d(radius: float, height: float, closed: bool = True,
             opacity=0.8
         ))
     
-    # Update layout with disabled interactions
+    # Update layout
     fig.update_layout(
         title=title,
         scene=dict(
@@ -82,17 +82,15 @@ def plot_cylinder_3d(radius: float, height: float, closed: bool = True,
             aspectmode='data',
             camera=dict(
                 eye=dict(x=1.5, y=1.5, z=1.5)
-            ),
-            dragmode=False
+            )
         ),
         width=700,
         height=700
     )
     
-    # Hide mode bar and disable all interactions
+    # Hide mode bar to remove all buttons
     config = {
-        'displayModeBar': False,
-        'staticPlot': True
+        'displayModeBar': False
     }
     
     return fig, config
@@ -157,7 +155,7 @@ def plot_box_3d(length: float, width: float, height: float,
             showlegend=False
         ))
     
-    # Update layout with disabled interactions
+    # Update layout
     fig.update_layout(
         title=title,
         scene=dict(
@@ -167,17 +165,15 @@ def plot_box_3d(length: float, width: float, height: float,
             aspectmode='data',
             camera=dict(
                 eye=dict(x=1.5, y=1.5, z=1.5)
-            ),
-            dragmode=False
+            )
         ),
         width=700,
         height=700
     )
     
-    # Hide mode bar and disable all interactions
+    # Hide mode bar to remove all buttons
     config = {
-        'displayModeBar': False,
-        'staticPlot': True
+        'displayModeBar': False
     }
     
     return fig, config
