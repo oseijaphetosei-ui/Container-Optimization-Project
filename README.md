@@ -16,7 +16,7 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - **Partial Derivatives** to find critical points
 
 
-## 🚀 Features
+##  Features
 
 - [ ] Optimize rectangular boxes (open top)
 - [ ] Optimize cylinders (closed and open)
@@ -25,7 +25,7 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - [ ] Shape comparison analysis
 
 
-## 📚 Calculus Concepts
+##  Calculus Concepts
 
 This project demonstrates:
 
@@ -34,7 +34,7 @@ This project demonstrates:
 3. **3D Surface Visualization** - Graphing and analyzing optimization landscapes
 4. **Real-World Applications** - Packaging design, manufacturing, cost minimization
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python 
 - **NumPy and SciPy** - Numerical computations and optimizations
@@ -123,7 +123,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 - [ ] Display results and visualizations
 - [ ] Add mathematical derivation display
 
-### Phase 5: Advanced Features(coming soon) 🚀
+### Phase 5: Advanced Features(coming soon) 
 - [ ] Add more shapes (cone, sphere)
 - [ ] Material cost optimization
 - [ ] Gradient descent animation
@@ -144,7 +144,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 - **Sustainability** - Reduce material waste
 
 
-## 🎓 Educational Value
+##  Educational Value
 
 This project is ideal for:
 - Calculus 3 / Multivariable Calculus students
@@ -156,7 +156,7 @@ This project is ideal for:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+##  Author
 
 - **OSEI JAPHET ACQUAH**
 
