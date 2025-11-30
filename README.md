@@ -87,15 +87,15 @@ Contributions are welcome! This is a learning project, so feel free to:
 1. **Fork** this repository
 2. **Create a branch** for your feature
    ```bash
-   git checkout -b feature/amazing-feature
+   git checkout -b feature
    ```
 3. **Commit your changes**
    ```bash
-   git commit -m "Add amazing feature"
+   git commit -m "Add ... feature"
    ```
 4. **Push to your fork**
    ```bash
-   git push origin feature/amazing-feature
+   git push origin feature
    ```
 5. **Open a Pull Request**
 
@@ -103,7 +103,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 
 ## 📋 Development Roadmap
 
-### Phase 1:Research calculus concepts ✏️
+### Phase 1:Research calculus concepts 
 - [ ] Derive formulas using Lagrange multipliers
 - [ ] Document all mathematical proofs
 
@@ -130,13 +130,13 @@ Contributions are welcome! This is a learning project, so feel free to:
 - [ ] Export results feature
 
 
-## 📖 Documentation
+##  Documentation
 
 - [Mathematical Derivations](docs/derivations.md) - Full calculus proofs
 - [API Reference](docs/api.md) - Function documentation
 - [Examples](docs/examples.md) - Usage examples
 
-## 💡 Use Cases
+##  Applications
 
 - **Packaging Design** - Minimize material costs
 - **Manufacturing** - Optimize production efficiency
@@ -152,16 +152,17 @@ This project is ideal for:
 - Understanding real-world applications of calculus
 - Practicing Python and data visualization
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
 
-- **OSEI JAPHET ACQUAH** 
+- **OSEI JAPHET ACQUAH**
 
 
-## 📬 Contact
+
+##  Contact
 
 - GitHub: oseijaphetosei-ui(https://github.com/oseijaphetosei-ui)
 - Email:jotk2024@mymail.pomona.edu
