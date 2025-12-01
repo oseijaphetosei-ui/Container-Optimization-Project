@@ -105,8 +105,7 @@ Contributions are welcome! This is a learning project, so feel free to:
 ##  Documentation
 
 - [Mathematical Derivations](docs/derivations.md) - Full calculus proofs
-- [API Reference](docs/api.md) - Function documentation
-- [Examples](docs/examples.md) - Usage examples
+
 
 ##  Applications
 
