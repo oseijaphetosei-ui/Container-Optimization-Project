@@ -44,9 +44,6 @@ This project demonstrates:
 
 
 
-[See full derivations in `/docs/derivations.md`]
-
-
 
 ##  Contributing
 
