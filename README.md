@@ -25,7 +25,6 @@ This project uses **multivariable calculus** to solve real-world optimization pr
 - [ ] Shape comparison analysis
 
 
-##  Calculus Concepts
 
 This project demonstrates:
 
