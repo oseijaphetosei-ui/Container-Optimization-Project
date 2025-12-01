@@ -375,5 +375,7 @@ st.sidebar.markdown("""
     
     **Created by:**
     - JAPHET ACQUAH, OSEI
+    - SELINA, FAN
+    - FREDERICA, ABOAGYE
    
 """)
