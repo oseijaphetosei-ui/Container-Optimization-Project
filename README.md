@@ -43,30 +43,6 @@ This project demonstrates:
 - **Streamlit** - Web interface
 
 
-##  Mathematical Background
-
-### Problem: Minimize Surface Area
-
-**For a Cylinder (closed):**
-
-- **Objective:** Minimize S = 2πr² + 2πrh
-- **Constraint:** V = πr²h = constant
-
-**Using Lagrange Multipliers:**
-
-Set up the Lagrangian:
-```
-L(r, h, λ) = 2πr² + 2πrh - λ(πr²h - V)
-```
-
-Take partial derivatives and solve:
-```
-∂L/∂r = 4πr + 2πh - 2λπrh = 0
-∂L/∂h = 2πr - λπr² = 0
-∂L/∂λ = πr²h - V = 0
-```
-
-**Result:** Optimal cylinder has h = 2r (height equals diameter)
 
 [See full derivations in `/docs/derivations.md`]
 
