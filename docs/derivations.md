@@ -35,43 +35,44 @@ Volume must equal V:
 g(r, h) = πr²h - V = 0
 ```
 
-### Lagrange Multiplier Method
+### Solution Using Gradient Method
 
-#### Step 1: Form the Lagrangian
-```
-L(r, h, λ) = 2πr² + 2πrh - λ(πr²h - V)
-```
+#### Step 1: Find Gradients
 
-#### Step 2: Compute Partial Derivatives
-
-∂L/∂r:
+∇S (gradient of surface area):
 ```
-∂L/∂r = 4πr + 2πh - 2λπrh = 0  ...(1)
+∇S = (∂S/∂r, ∂S/∂h) = (4πr + 2πh, 2πr)
 ```
 
-∂L/∂h:
+∇g (gradient of constraint):
 ```
-∂L/∂h = 2πr - λπr² = 0  ...(2)
-```
-
-∂L/∂λ:
-```
-∂L/∂λ = πr²h - V = 0  ...(3)
+∇g = (∂g/∂r, ∂g/∂h) = (2πrh, πr²)
 ```
 
-#### Step 3: Solve the System
+#### Step 2: Set ∇S = λ∇g
+
+For r-component:
+```
+4πr + 2πh = λ(2πrh)  ...(1)
+```
+
+For h-component:
+```
+2πr = λ(πr²)  ...(2)
+```
+
+#### Step 3: Solve
 
 From equation (2):
 ```
-2πr - λπr² = 0
 2πr = λπr²
-λ = 2/r  ...(4)
+λ = 2/r
 ```
 
-Substitute (4) into equation (1):
+Substitute into equation (1):
 ```
-4πr + 2πh - 2(2/r)πrh = 0
-4πr + 2πh - 4πh = 0
+4πr + 2πh = (2/r)(2πrh)
+4πr + 2πh = 4πh
 4πr = 2πh
 h = 2r
 ```
@@ -121,42 +122,44 @@ where:
 g(r, h) = πr²h - V = 0
 ```
 
-### Lagrange Multiplier Method
+### Solution Using Gradient Method
 
-#### Step 1: Form the Lagrangian
-```
-L(r, h, λ) = πr² + 2πrh - λ(πr²h - V)
-```
+#### Step 1: Find Gradients
 
-#### Step 2: Compute Partial Derivatives
-
-∂L/∂r:
+∇S (gradient of surface area):
 ```
-∂L/∂r = 2πr + 2πh - 2λπrh = 0  ...(1)
+∇S = (∂S/∂r, ∂S/∂h) = (2πr + 2πh, 2πr)
 ```
 
-∂L/∂h:
+∇g (gradient of constraint):
 ```
-∂L/∂h = 2πr - λπr² = 0  ...(2)
-```
-
-∂L/∂λ:
-```
-∂L/∂λ = πr²h - V = 0  ...(3)
+∇g = (∂g/∂r, ∂g/∂h) = (2πrh, πr²)
 ```
 
-#### Step 3: Solve the System
+#### Step 2: Set ∇S = λ∇g
+
+For r-component:
+```
+2πr + 2πh = λ(2πrh)  ...(1)
+```
+
+For h-component:
+```
+2πr = λ(πr²)  ...(2)
+```
+
+#### Step 3: Solve
 
 From equation (2):
 ```
 2πr = λπr²
-λ = 2/r  ...(4)
+λ = 2/r
 ```
 
-Substitute (4) into equation (1):
+Substitute into equation (1):
 ```
-2πr + 2πh - 2(2/r)πrh = 0
-2πr + 2πh - 4πh = 0
+2πr + 2πh = (2/r)(2πrh)
+2πr + 2πh = 4πh
 2πr = 2πh
 h = r
 ```
@@ -205,44 +208,50 @@ where:
 g(l, w, h) = lwh - V = 0
 ```
 
-### Lagrange Multiplier Method
+### Solution Using Gradient Method
 
-#### Step 1: Form the Lagrangian
-```
-L(l, w, h, λ) = lw + 2lh + 2wh - λ(lwh - V)
-```
+#### Step 1: Find Gradients
 
-#### Step 2: Compute Partial Derivatives
-
-∂L/∂l:
+∇S (gradient of surface area):
 ```
-∂L/∂l = w + 2h - λwh = 0  ...(1)
+∇S = (∂S/∂l, ∂S/∂w, ∂S/∂h) = (w + 2h, l + 2h, 2l + 2w)
 ```
 
-∂L/∂w:
+∇g (gradient of constraint):
 ```
-∂L/∂w = l + 2h - λlh = 0  ...(2)
-```
-
-∂L/∂h:
-```
-∂L/∂h = 2l + 2w - λlw = 0  ...(3)
+∇g = (∂g/∂l, ∂g/∂w, ∂g/∂h) = (wh, lh, lw)
 ```
 
-∂L/∂λ:
+#### Step 2: Set ∇S = λ∇g
+
+For l-component:
 ```
-∂L/∂λ = lwh - V = 0  ...(4)
+w + 2h = λ(wh)  ...(1)
 ```
 
-#### Step 3: Solve the System
+For w-component:
+```
+l + 2h = λ(lh)  ...(2)
+```
 
-From equation (1): w + 2h = λwh  ...(5)
-From equation (2): l + 2h = λlh  ...(6)
+For h-component:
+```
+2l + 2w = λ(lw)  ...(3)
+```
 
-Dividing (5) by w: 1 + 2h/w = λh  ...(7)
-Dividing (6) by l: 1 + 2h/l = λh  ...(8)
+#### Step 3: Solve
 
-From (7) and (8):
+Divide equation (1) by w:
+```
+1 + 2h/w = λh  ...(4)
+```
+
+Divide equation (2) by l:
+```
+1 + 2h/l = λh  ...(5)
+```
+
+From (4) and (5):
 ```
 1 + 2h/w = 1 + 2h/l
 2h/w = 2h/l
@@ -251,22 +260,17 @@ l = w
 
 So the base is square!
 
-From equation (3):
+Substitute l = w into equation (3):
 ```
-2l + 2w - λlw = 0
-```
-
-Since l = w:
-```
-2l + 2l - λl² = 0
+2l + 2l = λl²
 4l = λl²
-λ = 4/l  ...(9)
+λ = 4/l
 ```
 
-Substitute (9) into equation (1) with w = l:
+Substitute λ = 4/l into equation (1) with w = l:
 ```
-l + 2h - (4/l)lh = 0
-l + 2h - 4h = 0
+l + 2h = (4/l)(lh)
+l + 2h = 4h
 l = 2h
 ```
 
@@ -305,47 +309,67 @@ S(l, w, h) = 2lw + 2lh + 2wh
 g(l, w, h) = lwh - V = 0
 ```
 
-### Lagrange Multiplier Method
+### Solution Using Gradient Method
 
-#### Step 1: Form the Lagrangian
-```
-L(l, w, h, λ) = 2lw + 2lh + 2wh - λ(lwh - V)
-```
+#### Step 1: Find Gradients
 
-#### Step 2: Compute Partial Derivatives
-
-∂L/∂l:
+∇S (gradient of surface area):
 ```
-∂L/∂l = 2w + 2h - λwh = 0  ...(1)
+∇S = (∂S/∂l, ∂S/∂w, ∂S/∂h) = (2w + 2h, 2l + 2h, 2l + 2w)
 ```
 
-∂L/∂w:
+∇g (gradient of constraint):
 ```
-∂L/∂w = 2l + 2h - λlh = 0  ...(2)
-```
-
-∂L/∂h:
-```
-∂L/∂h = 2l + 2w - λlw = 0  ...(3)
+∇g = (∂g/∂l, ∂g/∂w, ∂g/∂h) = (wh, lh, lw)
 ```
 
-∂L/∂λ:
+#### Step 2: Set ∇S = λ∇g
+
+For l-component:
 ```
-∂L/∂λ = lwh - V = 0  ...(4)
+2w + 2h = λ(wh)  ...(1)
 ```
 
-#### Step 3: Solve the System
+For w-component:
+```
+2l + 2h = λ(lh)  ...(2)
+```
 
-From equation (1): 2w + 2h = λwh  ...(5)
-From equation (2): 2l + 2h = λlh  ...(6)
-From equation (3): 2l + 2w = λlw  ...(7)
+For h-component:
+```
+2l + 2w = λ(lw)  ...(3)
+```
 
-Dividing (5) by 2h: w/h + 1 = λw/2  ...(8)
-Dividing (6) by 2h: l/h + 1 = λl/2  ...(9)
+#### Step 3: Solve
 
-From (8) and (9), we can show that l = w.
+Divide equation (1) by wh:
+```
+2/h + 2/w = λ  ...(4)
+```
 
-Similarly, from (7) and comparing with (5) and (6), we can show that l = h and w = h.
+Divide equation (2) by lh:
+```
+2/h + 2/l = λ  ...(5)
+```
+
+Divide equation (3) by lw:
+```
+2/w + 2/l = λ  ...(6)
+```
+
+From (4) and (5):
+```
+2/h + 2/w = 2/h + 2/l
+2/w = 2/l
+l = w
+```
+
+From (4) and (6) with l = w:
+```
+2/h + 2/w = 2/w + 2/w
+2/h = 2/w
+h = w
+```
 
 Therefore: **l = w = h**
 
