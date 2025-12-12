@@ -94,15 +94,6 @@ r = (V/(2π))^(1/3)
 h = 2r = 2(V/(2π))^(1/3)
 ```
 
-### Verification (Second Derivative Test)
-
-To confirm this is a minimum, we can check the bordered Hessian or simply note that:
-- As r → 0, h → ∞ and S → ∞
-- As r → ∞, h → 0 and S → ∞
-- There exists a unique critical point, which must be a minimum
-
----
-
 ## Open Cylinder
 
 ### Problem Statement
@@ -399,16 +390,4 @@ l = w = h = V^(1/3)
 | Open Top Box | l = w = 2h | Square base, sides twice height |
 | Closed Box | l = w = h | Perfect cube |
 
-## Key Insights
 
-1. **Symmetry is Optimal**: In all cases, the optimal shapes exhibit symmetry
-2. **Closed vs Open**: Removing a surface (top) changes the optimal proportions
-3. **Mathematical Elegance**: The ratios (2:1, 1:1) are simple and elegant
-4. **Practical Applications**: These results guide real-world packaging design
-
-## Further Explorations
-
-- What if we have different material costs for different surfaces?
-- What about containers with minimum volume but fixed surface area?
-- How do these results extend to other shapes (spheres, cones, etc.)?
-- What if we add additional constraints (maximum height, minimum base area, etc.)?
